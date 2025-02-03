@@ -2,23 +2,23 @@ class R2D2 (val nombre :String,){
 
     private var posX = 0
     private var posY = 0
-    private var direccion = Direccion
+    private var direccion = Direccion.PosY
 
     private fun mover(movimientos: Array<Int>){
         for(movimiento in movimientos){
             when {
-                direccion -> "PosX" {}
+                direccion == Direccion.PosY {}
 
-                direccion -> "PosY" {}
+                direccion == Direccion.PosX {}
 
-                direccion -> "NegX" {}
+                direccion == Direccion.NegY {}
 
-                direccion -> "NegY" {}
+                direccion == Direccion.NegX {}
             }
         }
     }
 
-    private fun obtenerPosicion() {"(x = $posX, y = $posY)"}
+    private fun obtenerPosicion(){"(x = $posX, y = $posY)"}
 
     private fun obtenerDireccion(){"$direccion"}
 
