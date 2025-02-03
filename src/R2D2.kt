@@ -18,9 +18,9 @@ class R2D2 (val nombre :String,){
         }
     }
 
-    private fun obtenerPosicion(){"(x = $posX, y = $posY)"}
+    private fun obtenerPosicion(){"(x= $posX, y= $posY)"}
 
-    private fun obtenerDireccion(){"$direccion"}
+    private fun obtenerDireccion(){direccion}
 
     override fun toString(): String {return "R2D2 está en ${obtenerPosicion()} con direccion ${obtenerDireccion()}"}
 }
