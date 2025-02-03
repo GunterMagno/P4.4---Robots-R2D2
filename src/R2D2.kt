@@ -7,22 +7,15 @@ class R2D2 (val nombre :String,){
     private fun mover(movimientos: Array<Int>){
         for(movimiento in movimientos){
             when {
-                direccion == Direccion.PosY {}
+                direccion == Direccion.PosY -> posY += movimiento
 
-                direccion == Direccion.PosX {}
+                direccion == Direccion.PosY -> posX += movimiento
 
-                direccion == Direccion.NegY {}
+                direccion == Direccion.NegY -> posY -= movimiento
 
-                direccion == Direccion.NegX {}
+                direccion == Direccion.NegY -> posX -= movimiento
             }
-            if (direccion == Direccion.PosY){
-
-            }else if (direccion == Direccion.PosX){
-
-            }
-
             nuevaDireccion()
-
         }
     }
 
