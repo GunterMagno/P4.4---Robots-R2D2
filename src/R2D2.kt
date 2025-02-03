@@ -15,7 +15,19 @@ class R2D2 (val nombre :String,){
 
                 direccion == Direccion.NegX {}
             }
+            if (direccion == Direccion.PosY){
+
+            }else if (direccion == Direccion.PosX){
+
+            }
+
+            nuevaDireccion()
+
         }
+    }
+
+    private fun nuevaDireccion(){
+        //como la cambio a la siguiente .-.
     }
 
     private fun obtenerPosicion(){"(x= $posX, y= $posY)"}
