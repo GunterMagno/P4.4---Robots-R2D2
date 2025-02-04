@@ -1,5 +1,11 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
 
+
+
+fun main() {
+    val movimientos = arrayOf(1,2,3,-5)
+    val robot = R2D2("Paco")
+
+    robot.mover(movimientos)
+
+    println(robot)
 }
